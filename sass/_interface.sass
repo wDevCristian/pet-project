@@ -1,0 +1,39 @@
+@import "colors"
+@import "fonts"
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Arial" , sans-serif
+a,li,ul 
+  list-style: none
+  text-decoration: none
+h1,h2,h3,h4,h5,h6,
+  margin: 0
+  padding: 0      
+.container
+  width: 1170px
+  margin: auto
+.header
+  background: #323134 url("../img/first-bg.jpg")no-repeat center center
+  background-size: cover
+  height: 100vh
+.title
+  text-transform: uppercase 
+  color: $secondary
+  font-size: 40px
+  text-align: center
+  +bold  
+.subtitle
+  color: $third-color
+  font-size: 16px
+  text-align: center    
+.card
+  &__title
+    font-size: 18px
+    color: $secondary
+    +bold
+  &__subtitle    
+    font-size: 14px
+    color: $third-color
+    line-height: 1.7
